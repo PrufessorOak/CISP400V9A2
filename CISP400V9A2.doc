@@ -1,0 +1,64 @@
+You can choose to submit either A2 (worth 150 points), AD2 (worth 180), or both (worth 180) for 2nd assignment you will get a score for this assignment either 150 points base or 180 points base.  
+
+Grading Criteria:
+1.	If the submitted program cannot be compiled or run on a Microsoft visual studio 2013 C++ compiler, the assignment will not get any credit.
+2.	If the file name does not follow the naming instruction as stated in syllabus, the assignment will get 5 to 15 points deduction.  
+3.	If the header section of the submitted file does not include personal information and purpose of the file, the assignment will get 5 to 30 points deduction.
+4.	Late assignments will not get any credit for the assignment.  
+5.	A submission does not follow the instructions of the assignment will get little credit.
+6.	A portion of the assignment is not finished or incomplete will get little or no credit.
+7.	Submit an assignment to a wrong drop box.  The wrong drop box one will not get any credit.
+8.	If use A for AD or AD for A assignments in the file name, the student will not get any credit for the assignments. 
+9.	If the submitted file(s) cannot be opened by the instructor’s software (WinZip, Visual Studio, or text editor) the assignment will have little credit.
+10.	If the submission file does not include all necessary programming files to run the program, the program will get little credit.
+11.	If the program does not separate into several files (driver, header file, implementation file, etc.) as describe in the assignment, the program will get little credit.
+12.	If the displaying result of the program is not exactly match with the graphic in the assignment description or the displaying result of the executable file which comes with the assignment, the assignment will get little credit. 
+13.	If the program does not have enough detail documentation in the programming area the program will get 5 to 30 points deduction.
+14.	If the program includes some unrelated documentation the program will get some points deduction.
+
+
+A2
+A company wants to transmit data over the telephone, but is concerned that its phones could be tapped. All of the data are transmitted as four-digit integers. The company has asked you to write a program that encrypts the data so that it can be transmitted more securely. Your program should read a four-digit integer and encrypt it as follows: Replace each digit by (the sum of that digit plus 7) modulus 10. Then, swap the first digit with the third, swap the second digit with the fourth and print the encrypted integer.  Your main duty for this assignment is creating an Encrypt class which includes Encrypt.h and Encrypt.cpp. After finishing the task you can use CISP400V9A2.cpp to test the Encrypt class.
+
+The following is the Encrypt class specification.
+1.  The Encrypt class has an integer private data member 8 element array named digits.  The first four elements (0 ~ 3) are to store the original 4 digits integer and the next four (4 ~ 7) are to store the encrypted data.
+2.  Encrypt class has several public member functions
+a. An Encrypt constructor takes an integer of any digits and stores the last four digits. It encrypts the last four digits, stores the encrypted information, displays a call to the constructor information, and shows the original information and encrypted information. If the inputted number is less than or equal to 0 the integer is set to 9436.  
+b. A displayOriginalData function does not accept and return any data.  It displays the first four elements of the private data member.
+c. A storeData function takes an integer and does not return anything.  It stores the last four digits of the passed in integer to the first 4 elements of the private data member, encrypts the data and store them in the last 4 elements of the private data member.
+d. A displayEncryptedData function does not accept and return any data. It displays the last four elements of the private data member.
+This assignment comes with a CISP400V9A2.zip file.  It includes two files (CISP400V9A2.cpp and CISP400V9A2.exe).  The CISP400V9A2.exe file is an executable file.  You can double click the file to get to the expecting result (see the picture below) of this assignment.  After you finish your implementation for the Encrypt class (put the declaration of the Encrypt class into Encrypt.h , and implementation of the class into Encrypt.cpp), you can put the CISP400V9A2.cpp, Encrypt.h , and Encrypt.cpp in a project and then you should run to the same result as the CISP400V9A2.exe.  Please be awarded that you can adjust only your program (Encrypt.h, and Encrypt.cpp) to generate the required result but not the code in CISP400V9A2.cpp file.
+The following is the display of the expecting result.
+ 
+Please document the files(CISP400V9A2.cpp, Encrypt.cpp and Encrypt.h) properly and zip them into a proper named zip file for this assignment (refer to the assignment section of the class syllabus) and submit it to the A2 dropbox of the D2L Website.
+
+Worth 150 points
+AD2
+A company wants to transmit data over the telephone, but is concerned that its phones could be tapped. All of the data are transmitted as four-digit integers. The company has asked you to write a program that encrypts and decrypts the data so that it can be transmitted more securely. Your program should read a four-digit integer and encrypt it as follows: Replace each digit by (the sum of that digit plus 7) modulus 10. Then, swap the first digit with the third, swap the second digit with the fourth and print the encrypted integer.  Create an Encrypt class to do the encryption, create a decrypt class to do the decryption (convert the encrypted number to its original number) 
+Your main duty for this assignment is creating an Encrypt class which includes Encrypt.h and Encrypt.cpp, and Decrypt class which includes Decrypt.h and Decrypt.cpp.  After finish the tasks you can use CISP400V9AD2.cpp to test the Encrypt and Decrypt classes.
+The following is the Encrypt class specification. 
+1.  The Encrypt class has an integer private data member 8 element array named digits.  The first four elements (0 ~ 3) are to store the original 4 digits integer and the next four (4 ~ 7) are to store the encrypted data.
+2.  Encrypt class has several public member functions
+a. An Encrypt constructor takes an integer of any digits and stores the last four digits. It encrypts the last four digits, stores the encrypted information, displays a call to this constructor information, and shows the original information and encrypted information. If the inputted number is less than or equal to 0 the integer is set to 9436.  
+b. The other Encrypt constructor takes an array of any length and stores the first four digits (0 ~ 3). It encrypts the first four digits, stores the encrypted information, displays a call to this constructor information, and shows the original information and encrypted information.  If the inputted first four is less than or equal to 0 the integer is set to 9436.  
+c. A displayOriginalData function does not accept and return any data.  It displays the first four elements of the private data member.
+d. A storeData function takes an integer and does not return anything.  It stores the last four digits of the passed in integer to the first 4 elements of the private data member, encrypts the data and store them in the last 4 elements of the private data member.
+e. A displayEncryptedData function does not accept and return any data. It displays the last four elements of the private data member.
+f. A getEncryptedData function does not accept any data.  It returns an integer, the 4 digit encrypted integer.
+
+The following is the Decrypt class specification. 
+1.  The Decrypt class has an integer private data member 8 element array named digits.  The first four elements (0 ~ 3) are to store the decrypted data and the next four (4 ~ 7) are to store the inputted first 4 digits integer data which should be encrypted data.
+2.  Decrypt class has several public member functions
+a. A decrypt constructor takes an integer of any digits and stores the last four digits. It decrypts the last four digits, stores the decrypted information, displays a call to the constructor information, and shows the original and decrypted information. If the inputted number is less than or equal to 0 the integer is set to 1234.  
+b. Another decrypt constructor takes an integer array of any size and store the array element 0 to 3.  It decrypts the 0 ~ 3 elements, stores the decrypted information, displays a call to the constructor, and shows the original and decrypted information. If the inputted number is less than or equal to 0 the integer is set to 1234.  
+
+c. A displayOriginalData function does not accept and return any data.  It displays the last four elements of the private data member.
+d. A storeData function takes an integer and does not return anything.  It stores the last four digits of the passed in integer to the first 4 elements of the private data member, decrypts the data and store them in the last 4 elements of the private data member.
+e. A displayDecryptedData function does not accept and return any data. It displays the first four elements of the private data member.
+f. A getDecryptedData function does not accept any data. It returns an integer, the 4 digit decrypted integer.
+
+This assignment comes with a CISP400V9AD2.zip file.  It includes two files (CISP400V9AD2.cpp and CISP400V9AD2.exe).  The CISP400V9AD2.exe file is an executable file.  You can double click the file to get to the expecting result (see the pictures below) of this assignment.  After you finish your implementation for the Encrypt (put the declaration of the Encrypt class into Encrypt.h, and implementation of the class into Encrypt.cpp) and Decrypt (put the declaration of the Decrypt class into Decrypt.h , and implementation of the class into Decrypt.cpp) classes, you can put the CISP400V9AD2.cpp, Encrypt.h , Encrypt.cpp, Decrypt.h and Decrypt.cpp in a project and then you should run to the same result as the CISP400V9AD2.exe.  Please be awarded that you can adjust only your program (Encrypt.h, Encrypt.cpp, Decrypt.h and Decrypt.cpp) to generate the required result but not the code in CISP400V9AD2.cpp file.
+The following is the display of the expecting result.
+    
+Please document CISP400V9AD2.cpp, Encrypt.cpp, Encrypt.h, Decrypt.h and Decrypt.cpp files properly and zip them into a proper named zip file for an assignment (refer to the assignment section of the class syllabus) and submit it to the A2 dropbox of the D2L Website.
+Worth 180 points
